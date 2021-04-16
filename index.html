@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>temperature converter</title>
+  </head>
+  <body>
+    <div class="flex-container">
+      <div>
+        <p class="alignTopLeft">Degree</p>
+        <input type="number" name="degree" id="degreeInputField" />
+      </div>
+      <div>
+        <p class="alignTopLeft">Type</p>
+        <!-- <input type="text" name="type" id="degreeInputField" /> -->
+        <select name="Type" id="unitType">
+          <option value="C">Celsius</option>
+          <option value="F">Fahrenheit</option>
+        </select>
+      </div>
+      <div id="submitButton">
+        <button id="submit" type="submit">Submit</button>
+      </div>
+      <div class="result">
+        <p>Result:</p>
+      </div>
+      <div class="result">
+        <h2 id="resultDisplay">69.420</h2>
+      </div>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
